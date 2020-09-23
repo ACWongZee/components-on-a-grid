@@ -77,10 +77,40 @@ nav {
   grid-area: header;
 }
 
+ul {
+  padding-top: 0;
+  padding-right: 3rem;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
 ul li {
   padding: .75rem;
   display: inline;
   font-family: "Patua One", sans-serif;
   text-decoration: none;
   color: #fff;
+}
+
+p {
+  margin: .25em;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+figure {
+  margin: 0;
+  padding: 1rem 0 0;
+}
+
+.pano {
+  z-index: 1;
+  grid-row: 1 /span 2;
+  grid-column: 1 / span 2;
+  grid-area: header;
 }
