@@ -10,7 +10,8 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: "Patua One", georgia;
+  font-family: Georgia, serif;
+  line-height: 1.5;
 }
 
 *,
@@ -23,7 +24,31 @@ img {
   width: 100%;
 }
 
+body {
+  display: grid;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f2f1ed;
+  grid-template-areas:
+    "header header"
+    "header header"
+    "figure figure";
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr;
+}
+
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+  margin: 1rem;
+  grid-area: header;
+  padding: 0;
+}
+
+.logo {
+  width: 14rem;
+}
+
+ul {
+  font-family: "Patua One", sans-serif;
 }
